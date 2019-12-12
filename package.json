@@ -1,5 +1,5 @@
 {
-  "name": "zen_rails_base_app",
+  "name": "time_track",
   "private": true,
   "dependencies": {
     "sweetalert2": "^6.6.9"

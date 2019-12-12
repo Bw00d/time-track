@@ -107,10 +107,10 @@ steps as they are not specific to this base app.
 from `ZenRailsBaseApp` to your application name, in camel case.
     2. *Optional*: Use your IDE's "search all files" feature to find and 
     replace the following strings:
-        - Replace `zen_rails_base_app` by `your_app_name` 
-        - Replace `ZEN_RAILS_BASE_APP` by `YOUR_APP_NAME`
-        - Replace `Project Name` by the project's name
-        - Replace `replace@me.com`  manually by the different e-mail addresses
+        - Replace `time_track` by `your_app_name` 
+        - Replace `time_track` by `YOUR_APP_NAME`
+        - Replace `TimeTrack` by the project's name
+        - Replace `bwoodreid@gmail.com`  manually by the different e-mail addresses
         that should send and receive e-mails in various parts of the 
         application.
 4. Run `bundle install` to install the gems listed in the `Gemfile` and their 

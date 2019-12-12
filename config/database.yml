@@ -8,16 +8,16 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   # The following username and password are used for both development and test
   # environments.
-  username: localdbuser
-  password: localdbpass
+  username: 
+  password: 
 
 development:
   <<: *default
-  database: zen_rails_base_app_development
+  database: time_track_development
 
 test:
   <<: *default
-  database: zen_rails_base_app_test
+  database: time_track_test
 
 production:
   <<: *default
@@ -48,11 +48,11 @@ production:
 #
 #development:
 #  <<: *default
-#  database: zen_rails_base_app_development
+#  database: time_track_development
 #
 #test:
 #  <<: *default
-#  database: zen_rails_base_app_test
+#  database: time_track_test
 #
 #production:
 #  <<: *default
