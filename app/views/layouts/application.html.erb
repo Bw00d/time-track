@@ -26,7 +26,7 @@ controller and action allows the implementation of page-specific CSS and JS %>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <%= link_to image_tag('logo.png'), root_path, class: 'navbar-brand', alt: 'TimeTrack' %>
+            <div class="name">TimeTrack</div>
           </a>
         </div>
 
@@ -38,7 +38,7 @@ controller and action allows the implementation of page-specific CSS and JS %>
             item of the navbar and "Contact" to be the last %>
             <li><%= link_to t('navigation.home'), root_path %></li>
             <%= yield(:navigation_menu) %>
-            <li><%= link_to t('navigation.contact'), contact_path %></li>
+            <li><%#= link_to t('navigation.contact'), contact_path %></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
