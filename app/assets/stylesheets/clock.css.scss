@@ -1,0 +1,24 @@
+
+.clock {
+    text-align: center !important;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+
+}
+.face {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background-color: #f1f3f4;
+}
+
+#activity-button {
+  margin-top: 20px;
+  width: 350px;
+
+}
