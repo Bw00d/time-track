@@ -1,5 +1,6 @@
 class ActivitiesController < ApplicationController
   before_action :set_activity, only: [:show, :edit, :update, :destroy]
+  include SkipAuthorization
 
   # GET /activities
   # GET /activities.json
@@ -28,8 +29,8 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.save
-        format.html { redirect_to @activity, notice: 'Activity was successfully created.' }
-        format.json { render :show, status: :created, location: @activity }
+        format.html { redirect_to activities_path }
+        format.json { render :index }
       else
         format.html { render :new }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
@@ -42,8 +43,8 @@ class ActivitiesController < ApplicationController
   def update
     respond_to do |format|
       if @activity.update(activity_params)
-        format.html { redirect_to @activity, notice: 'Activity was successfully updated.' }
-        format.json { render :show, status: :ok, location: @activity }
+        format.html { redirect_to activities_path }
+        format.json { render :index, status: :ok }
       else
         format.html { render :edit }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
