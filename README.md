@@ -161,6 +161,53 @@ Select2.
 - Internationalize and translate the JS front end, mainly `global.js` and 
 `zen-utils.js`.
 
+##Package Control Messages
+========================
+
+##TestRSpec
+---------
+
+  Quick Start
+  ===========
+  
+  TestRSpec allows you to run RSpec from within Sublime Text.
+  
+  TestRSpec tries its best to autodetect how to run RSpec. However, you might need to make
+  adjustments to plugin's configuration if you have an uncommon setup.
+  
+  Documentation: https://github.com/astrauka/TestRSpec
+  
+  Default Keybindings
+  ===================
+  
+  Launch RSpec for:
+  
+  - Current file:             Super+Shift+T
+  - Current line:             Super+Shift+R
+  - Rerun last run command:   Super+Shift+E
+  
+  Other commands:
+  
+  - Switch between code and spec:   Super+.
+  - Create a spec:                  Super+Shift+C
+  - Copy last run command:          Super+Shift+,
+  - Close output panel:             Esc
+  - Reveal output panel:            Super+Shift+X
+  
+  Super key is either Win or Cmd, depending on platform.
+  
+  Suggested Settings
+  ==================
+  
+  Set `show_errors_inline` to `false` in your global settings.
+  
+  Having an Issue?
+  ================
+  
+  Refer to the troubleshooting section at https://github.com/astrauka/TestRSpec
+  
+  Please report issues and suggestions there.
+
 ## Authors
 
 - **Bruno Facca** - [Twitter](https://twitter.com/bruno_facca) - 

@@ -78,7 +78,6 @@ RSpec.configure do |config|
       errors = page.driver
                    .browser
                    .manage
-                   .logs
                    .get(:browser)
                    .select { |e| e.level == 'SEVERE' && e.message.present? }
                    .map(&:message)

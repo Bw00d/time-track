@@ -14,8 +14,6 @@ describe 'layout and UI elements', type: :feature, js: true do
       within '.navbar-default' do
         expect(page).to have_link(I18n.t('navigation.home'),
                                   href: root_path)
-        expect(page).to have_link(I18n.t('navigation.contact'),
-                                  href: contact_path)
         expect(page).to have_link(I18n.t('navigation.sign-up'),
                                   href: new_user_registration_path)
         expect(page).to have_link(I18n.t('navigation.sign-in'),
