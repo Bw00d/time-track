@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :slots
   resources :activities
   root to: 'home#index'
 

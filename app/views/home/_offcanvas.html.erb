@@ -1,0 +1,9 @@
+<div id="offcanvas">
+  <div class="col-md-8 center-block">
+    <div id="choose-activities">
+      <% @activities.each do |activity| %>
+        <div class="activity"><%= link_to activity.description, activity_path(activity) %></div>
+      <% end %>
+    </div>
+  </div>
+</div>
