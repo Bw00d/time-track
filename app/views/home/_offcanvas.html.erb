@@ -1,4 +1,4 @@
-<div id="offcanvas">
+<div id="offcanvas" class="transition">
   <div class="col-md-8 center-block">
     <div id="choose-activities">
 
@@ -17,7 +17,7 @@
            <div id="add-activity-button"><%= link_to "+", 'javascript:;' %></div>
       <% @activities.each do |activity| %>
         <div class="activity">
-          <%= link_to activity.description, activity_path(activity) %>
+          <%= link_to activity.description, 'javascript:;' %>
         </div>
       <% end %>
     </div>

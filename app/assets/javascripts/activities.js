@@ -40,4 +40,8 @@ $( document ).on('turbolinks:load', function(){
         event.stopPropagation();
     });
 
+    $('#activity-button').click(function(){
+      $('#offcanvas').toggleClass('open'); 
+    });
 });
+
