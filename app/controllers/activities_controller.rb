@@ -29,7 +29,7 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.save
-        format.html { redirect_to activities_path }
+        format.html { redirect_to root_path }
         format.json { render :index }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ActivitiesController < ApplicationController
   def update
     respond_to do |format|
       if @activity.update(activity_params)
-        format.html { redirect_to activities_path }
+        format.html { redirect_to root_path }
         format.json { render :index, status: :ok }
       else
         format.html { render :edit }

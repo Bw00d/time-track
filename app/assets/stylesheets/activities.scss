@@ -1,11 +1,12 @@
 .activity {
   background: #D2D2D2;
-    -moz-border-radius: 40px/40px;
-    -webkit-border-radius: 40px 40px;
-    border-radius: 40px/40px;
-    padding: 5px 15px; 
+    -moz-border-radius: 35px/35px;
+    -webkit-border-radius: 35px 35px;
+    border-radius: 35px/35px;
+    padding: 5px 15px;
     float: left;
     margin-right: 10px;
+    line-height: 1.8em;
     a {
         color: black;
     }
@@ -35,4 +36,129 @@
   width: 96%;
   height: 65%;
   border: 1px dashed blue;
+}
+
+/* Activity */
+.add-activity-button {
+  
+}
+  #add-activity-button {
+    margin-right: 10px;
+    font-size: 2em;
+    display: inline;
+    text-align: center;
+    -moz-border-radius: 35px/35px;
+    -webkit-border-radius: 35px 35px;
+    border-radius: 35px/35px;
+    width:35px;
+    height:35px;
+    display: inline-block;
+    background-color: #d2d2d2;
+    border: 2px solid #d2d2d2;
+    float: left;
+    /*clear: all;*/
+    text-align: center;
+    vertical-align: middle !important;
+    line-height: 25px;
+    font-weight: 300; 
+    a {
+      color: black;
+    }
+    span.subtext {
+      font-size: .5em !important;
+    }
+  }
+#add-expense {
+  margin-top: 2%;
+}
+
+.activity-button {
+    background: #D2D2D2;
+    -moz-border-radius: 40px/40px;
+    -webkit-border-radius: 40px 40px;
+    border-radius: 40px/40px;
+    padding: 5px 15px;
+    float: left;
+    margin-right: 10px;
+    a {
+        color: black;
+    }
+    margin-bottom: 10px;
+}
+
+#activity-buttons {
+    display: relative;
+    display: block;
+    overflow: hidden;
+    min-height: 65px;
+}
+.unselected {
+    display: none !important;
+}
+span.hidden-id {
+    display: none;
+}
+
+#add-comment {
+    display: none;
+}
+/*activity form*/
+#activity-form {
+    background: white;
+    padding: 0px;
+    width: 35px;
+    float: left;
+    margin: 0;
+    display: none;
+/*    margin-top: -188px;
+    margin-left: 0px;
+    position: absolute;*/
+    margin-bottom: 0;
+}
+#add-cat {
+    margin-top: -36px;
+    margin-left: 314px;
+    position: absolute;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    padding-left: 1px;
+    padding-top: 0px;
+    font-size: 2em;
+    text-align: center;
+    -moz-border-radius: 35px/35px;
+    -webkit-border-radius: 35px 35px;
+    border-radius: 35px/35px;
+    width:35px;
+    height:35px;
+    display: inline-block;
+    color: black;
+    line-height: .60em;
+
+    font-size: 2em;
+  
+    background-color: #d2d2d2;
+    border: 2px solid #d2d2d2;
+    /*float: left;*/
+    vertical-align: middle !important;
+    line-height: 25px; 
+    font-weight: 300;  
+    a {
+      color: black;
+    }
+    span.subtext {
+      font-size: .5em !important;
+    }
+}
+    a#add-cat:hover {
+      background-color: #d2d2d2;
+    }
+input#activity-input {
+    moz-border-radius: 40px/40px;
+    -webkit-border-radius: 40px 40px;
+    border-radius: 40px/40px;
+    margin-bottom: 0;
+    border: 2px solid #d2d2d2 !important;
+    height: 35px;
+    width: 348px;
+    display: block;
 }

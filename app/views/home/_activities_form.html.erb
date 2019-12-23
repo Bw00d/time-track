@@ -1,0 +1,13 @@
+<!-- category-form -->
+<div id="category-form">
+  <%= form_for @activity do |f| %>
+    <% if @activity.errors.any? %>
+      <div id="error_explanation">
+        Oops, try again!
+      </div>
+    <% end %>
+    <%= f.text_field :description, id: "category-input",:autofocus => true %>
+    <%= f.submit "Add", id: "add-cat", class: 'button' %>
+  <% end %>
+</div>
+<!-- category-form -->

@@ -1,8 +1,24 @@
 <div id="offcanvas">
   <div class="col-md-8 center-block">
     <div id="choose-activities">
+
+      <div id="activity-form">
+        <%= form_for @activity do |f| %>
+          <% if @activity.errors.any? %>
+            <div id="error_explanation">
+              Oops, try again!
+            </div>
+          <% end %>
+          <%= f.text_field :description, id: "activity-input",:autofocus => true %>
+          <%= f.submit "+", id: "add-cat" %>
+        <% end %>
+      </div>
+
+           <div id="add-activity-button"><%= link_to "+", 'javascript:;' %></div>
       <% @activities.each do |activity| %>
-        <div class="activity"><%= link_to activity.description, activity_path(activity) %></div>
+        <div class="activity">
+          <%= link_to activity.description, activity_path(activity) %>
+        </div>
       <% end %>
     </div>
   </div>
