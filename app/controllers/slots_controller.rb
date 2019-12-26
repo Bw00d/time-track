@@ -29,6 +29,7 @@ class SlotsController < ApplicationController
 
     respond_to do |format|
       if @slot.save
+        @slot.previous.update_attributes(endtime: @slot.starttime)
         format.html { redirect_to root_path }
         format.json { render :show, status: :created, location: @slot }
       else

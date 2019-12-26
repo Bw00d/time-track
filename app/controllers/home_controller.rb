@@ -6,5 +6,6 @@ class HomeController < ApplicationController
     @activities = Activity.all
     @activity   = Activity.new
     @slot       = Slot.new
+    @current_slot = Slot.all.last
   end
 end
