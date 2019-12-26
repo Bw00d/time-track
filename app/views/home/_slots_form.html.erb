@@ -1,0 +1,11 @@
+<%= form_for @slot do |f| %>
+
+    <%= f.hidden_field :starttime, id: :slot_starttime, value: Time.now %>
+    <%= f.hidden_field :user_id, id: :slot_user_id, value: current_user.id %>
+    <%= f.hidden_field :activity_id, id: :slot_activity_id %>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

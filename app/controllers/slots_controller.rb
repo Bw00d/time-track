@@ -70,6 +70,6 @@ class SlotsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def slot_params
-      params.require(:slot).permit(:starttime, :endtime, :user_id)
+      params.require(:slot).permit(:starttime, :endtime, :user_id, :activity_id)
     end
 end

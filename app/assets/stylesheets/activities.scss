@@ -1,16 +1,20 @@
 .activity {
   background: #D2D2D2;
-    -moz-border-radius: 35px/35px;
-    -webkit-border-radius: 35px 35px;
-    border-radius: 35px/35px;
-    padding: 5px 15px;
-    float: left;
-    margin-right: 10px;
-    line-height: 1.8em;
-    a {
-        color: black;
-    }
-    margin-bottom: 10px;
+  -moz-border-radius: 35px/35px;
+  -webkit-border-radius: 35px 35px;
+  border-radius: 35px/35px;
+  padding: 5px 15px;
+  float: left;
+  margin-right: 10px;
+  line-height: 1.8em;
+  a {
+      color: black;
+      text-decoration: none;
+  }
+  margin-bottom: 10px;
+}
+div.activity:hover {
+  background-color: #c7c7c7;
 }
 #activity-button {
   margin: 0 auto;
@@ -88,6 +92,12 @@
 .unselected {
     display: none !important;
 }
+.selected {
+  background-color: #4b4b4b !important;
+    a {
+    color: white !important;
+    }
+}
 span.hidden-id {
     display: none;
 }
@@ -95,6 +105,7 @@ span.hidden-id {
 #add-comment {
     display: none;
 }
+
 /*activity form*/
 #activity-form {
     background: white;
@@ -103,9 +114,6 @@ span.hidden-id {
     float: left;
     margin: 0;
     display: none;
-/*    margin-top: -188px;
-    margin-left: 0px;
-    position: absolute;*/
     margin-bottom: 0;
 }
 #add-cat {
@@ -155,6 +163,10 @@ input#activity-input {
     width: 348px;
     display: block;
 }
+
+span.hidden-id {
+  display: none;
+ }
 
 /*offcanvas*/
 #offcanvas {

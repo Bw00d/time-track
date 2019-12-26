@@ -4,6 +4,7 @@ class HomeController < ApplicationController
 
   def index
     @activities = Activity.all
-    @activity = Activity.new
+    @activity   = Activity.new
+    @slot       = Slot.new
   end
 end

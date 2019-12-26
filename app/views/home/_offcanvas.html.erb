@@ -13,13 +13,16 @@
           <%= f.submit "+", id: "add-cat" %>
         <% end %>
       </div>
-
+    
            <div id="add-activity-button"><%= link_to "+", 'javascript:;' %></div>
       <% @activities.each do |activity| %>
         <div class="activity">
-          <%= link_to activity.description, 'javascript:;' %>
+          <%= link_to activity.description, 'javascript:;', class: 'activity-link' %>
+          <span class="hidden-id"><%= activity.id %></span>
         </div>
       <% end %>
     </div>
   </div>
+<%= render 'slots_form' %>
 </div>
+

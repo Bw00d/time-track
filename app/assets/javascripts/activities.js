@@ -43,5 +43,24 @@ $( document ).on('turbolinks:load', function(){
     $('#activity-button').click(function(){
       $('#offcanvas').toggleClass('open'); 
     });
+
+  $('.activity').click(function(event){
+    value = $(this).find('span.hidden-id').text();
+
+    // $('.activity').toggleClass('unselected');
+
+    $(this).toggleClass('selected');
+   
+    $('#slot_activity_id').val(value);
+    event.preventDefault();
+  });
 });
 
+
+
+   $('.add-activity-button').click(function(event){
+    $('.activity-button').toggleClass('unselected');
+     $('.add-activity-button').toggleClass('unselected');
+     $('#activity-form').show();
+     event.preventDefault();
+    });
