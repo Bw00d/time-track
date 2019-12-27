@@ -1,3 +1,33 @@
+/*clock*/
+
+.clock {
+    text-align: center !important;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+
+}
+.face {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background-color: #f1f3f4;
+}
+
+#activity-button {
+  margin-top: 20px;
+  width: 350px;
+
+}
+#set-activity {
+  margin-top: 20px;
+  width: 350px;
+}
+
 .activity {
   background: #D2D2D2;
   -moz-border-radius: 35px/35px;
@@ -20,7 +50,7 @@ div.activity:hover {
   margin: 0 auto;
 }
 
-#set-activity {
+.set-activity-button {
   height: 25%;
   position: fixed;
   bottom: 0;
@@ -174,8 +204,9 @@ span.hidden-id {
   top: 75px;
   background-color: white;
   width: 96%;
-  height: 65%;
+  height: 100%;
   left: 100%;
+  z-index: 3;
 }
 
 .open {

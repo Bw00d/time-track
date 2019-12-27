@@ -40,27 +40,21 @@ $( document ).on('turbolinks:load', function(){
         event.stopPropagation();
     });
 
+    // slide off canvas on screen
     $('#activity-button').click(function(){
       $('#offcanvas').toggleClass('open'); 
+      $(this).hide();
     });
 
   $('.activity').click(function(event){
     value = $(this).find('span.hidden-id').text();
-
-    // $('.activity').toggleClass('unselected');
 
     $(this).toggleClass('selected');
    
     $('#slot_activity_id').val(value);
     event.preventDefault();
   });
+
+  // select current activity 
+  
 });
-
-
-
-   $('.add-activity-button').click(function(event){
-    $('.activity-button').toggleClass('unselected');
-     $('.add-activity-button').toggleClass('unselected');
-     $('#activity-form').show();
-     event.preventDefault();
-    });
