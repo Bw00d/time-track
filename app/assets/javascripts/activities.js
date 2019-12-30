@@ -49,6 +49,7 @@ $( document ).on('turbolinks:load', function(){
   $('.activity').click(function(event){
     value = $(this).find('span.hidden-id').text();
 
+    $('.activity').removeClass('selected'); 
     $(this).toggleClass('selected');
    
     $('#slot_activity_id').val(value);

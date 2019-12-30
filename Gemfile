@@ -60,6 +60,10 @@ gem 'select2-rails'
 # Get e-mail notifications when exceptions happen in the production environment
 gem 'exception_notification'
 
+# Add chart for clock
+gem "chartkick"
+gem 'groupdate'
+
 group :test do
   gem 'database_cleaner'
 end

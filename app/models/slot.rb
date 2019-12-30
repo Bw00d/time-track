@@ -7,5 +7,13 @@ class Slot < ApplicationRecord
   def previous
     self.class.where("id < ?", id).last
   end
+
+  def duration
+    if self.endtime
+      duration = ((self.endtime - self.starttime) * 24 * 60 * 60).to_i
+    else
+      duration = ((Time.now - self.starttime) * 24 * 60 * 60).to_i
+    end
+  end
     
 end

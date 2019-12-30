@@ -1,7 +1,8 @@
 <div class="row">
   <div class="col-lg-10 col-sm-12 center-block">
     <div class="clock">
-      <div class="face col-sm-12 center-block"></div>
+      <div class="face col-sm-12 center-block"><%= pie_chart @slots.group(:activity_id).count, legend: false %></div>
+
     </div>
   </div>
 </div>
