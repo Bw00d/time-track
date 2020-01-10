@@ -55,7 +55,5 @@ $( document ).on('turbolinks:load', function(){
     $('#slot_activity_id').val(value);
     event.preventDefault();
   });
-
-  // select current activity 
   
 });

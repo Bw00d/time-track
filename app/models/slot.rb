@@ -1,7 +1,13 @@
 class Slot < ApplicationRecord
 
+  scope :current_slot, -> { where(endtime: nil) }
+
   def activity
     Activity.find(self.activity_id)
+  end
+
+  def description
+    self.activity.description
   end
 
   def previous
@@ -9,10 +15,13 @@ class Slot < ApplicationRecord
   end
 
   def duration
+    if self.starttime < Time.zone.now.beginning_of_day
+      self.starttime = Time.zone.now.beginning_of_day
+    end
     if self.endtime
-      duration = ((self.endtime - self.starttime) * 24 * 60 * 60).to_i
+      duration = ((self.endtime - self.starttime) / 60 ).to_i
     else
-      duration = ((Time.now - self.starttime) * 24 * 60 * 60).to_i
+      duration = ((Time.now - self.starttime) / 60 ).to_i
     end
   end
     
