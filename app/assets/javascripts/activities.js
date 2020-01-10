@@ -46,6 +46,14 @@ $( document ).on('turbolinks:load', function(){
       $(this).hide();
     });
 
+    $(window).click(function() {
+      if($('#activity-form').is(':visible')){ 
+        $('#activity-form').hide();
+        $('.activity').show();
+        $('#add-activity-button').toggleClass('unselected');
+      }
+    });
+
   $('.activity').click(function(event){
     value = $(this).find('span.hidden-id').text();
 

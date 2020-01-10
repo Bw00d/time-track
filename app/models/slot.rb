@@ -1,5 +1,6 @@
 class Slot < ApplicationRecord
 
+  validates :activity_id, presence: true
   scope :current_slot, -> { where(endtime: nil) }
 
   def activity
