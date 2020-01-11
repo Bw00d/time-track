@@ -16,7 +16,7 @@
 // application uses jQuery and we've chosen to use jquery_ujs instead of
 // rails-ujs, mainly because it makes it easier to override $.rails.allowAction
 // to replace JavaScript confirmation dialogs with application-specific modals.
-//= require rails-ujs
+//= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require select2
