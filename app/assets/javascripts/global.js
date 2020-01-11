@@ -1,6 +1,6 @@
 // This file contains JS code which is used across the entire Rails application.
 
-$(document).ready(function() {
+$(document).on("turbolinks:load", function() {
     // Bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip();
 

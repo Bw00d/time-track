@@ -6,8 +6,8 @@
   <title><%= content_for?(:title) ? yield(:title) : "TimeTrack" %></title>
   <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Insert description" %>">
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application', 'Chart.bundle', 'chartkick' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'Chart.bundle', 'chartkick', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <%# Giving the body tag classes with names corresponding to the current

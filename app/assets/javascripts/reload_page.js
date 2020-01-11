@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('ready page:load', function() {
     var REFRESH_INTERVAL_IN_MILLIS = 5000;
      
        setTimeout(function(){
