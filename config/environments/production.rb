@@ -81,6 +81,9 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "time_track_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  # I added this to try to fix Chartkick error
+  config.serve_static_files = true
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to
   # raise delivery errors.
