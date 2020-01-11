@@ -57,7 +57,7 @@ Rails.application.configure do
   config.assets.quiet = true
 
   # I added this to try to fix Chartkick error
-  config.serve_static_files = true
+  # config.serve_static_files = true
 
   # Raises error for missing translations
   config.action_view.raise_on_missing_translations = true
