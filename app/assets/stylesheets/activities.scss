@@ -23,17 +23,16 @@
   width: 350px;
 
 }
-#set-activity {
-  margin-top: 20px;
-  width: 350px;
-}
 #set-activity-button {
   margin-top: 20px;
   width: 350px;
-  position: absolute;
-  bottom: 50px;
-  height: 100px;
   margin: 0 auto;
+}
+#set-activity {
+  margin-top: 20px;
+  height: 100px;
+  text-align: center;
+  width: 100%;
 }
 
 .activity {
@@ -212,6 +211,11 @@ input#activity-input:focus {
 
 span.hidden-id {
   display: none;
+ }
+
+ /*Slot form*/
+ #slot-form {
+  min-height: 450px;
  }
 
 /*offcanvas*/
