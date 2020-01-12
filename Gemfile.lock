@@ -78,7 +78,7 @@ GEM
     capybara-screenshot (1.0.17)
       capybara (>= 1.0, < 3)
       launchy
-    chartkick (2.2.5)
+    chartkick (3.3.1)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
     city-state (0.0.13)
@@ -337,7 +337,7 @@ DEPENDENCIES
   capybara (~> 2.15, >= 2.15.1)
   capybara-email
   capybara-screenshot
-  chartkick (~> 2.2.0)
+  chartkick (~> 3.3.0)
   city-state
   database_cleaner
   devise
