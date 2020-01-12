@@ -11,8 +11,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   margin: 0 auto;
   border-radius: 100%;
   background-color: #f1f3f4;
@@ -26,6 +26,14 @@
 #set-activity {
   margin-top: 20px;
   width: 350px;
+}
+#set-activity-button {
+  margin-top: 20px;
+  width: 350px;
+  position: absolute;
+  bottom: 50px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 .activity {
@@ -52,8 +60,7 @@ div.activity:hover {
 
 .set-activity-button {
   height: 25%;
-  position: fixed;
-  bottom: 0;
+ 
   text-align: center;
   width: 100%;
   margin-right: 2%;
@@ -62,6 +69,11 @@ div.activity:hover {
   position: relative;
   display: block;
   clear: both;
+}
+
+h2#current-slot {
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 
@@ -193,6 +205,10 @@ input#activity-input {
     width: 348px;
     display: block;
 }
+input#activity-input:focus {
+  outline: none;
+}
+
 
 span.hidden-id {
   display: none;

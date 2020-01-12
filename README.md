@@ -1,22 +1,12 @@
-# Zen Rails Base Application
+# What Did I Do With My Time
 
 ## Summary
-Base or "skeleton" application for Ruby on Rails 5.1 projects. Built to 
-minimize the time spent writing boilerplate code and performing repetitive 
-setup tasks. 
+This is a simple activity tracking application to help identify how I spend my time throughout the day.. 
 
-It comes with a preselected set of tools which I believe to be the most
-efficient and widely used. If you are looking for greater flexibility, an
-application template which uses Rails's templating system such as [Rails
-Composer](http://www.railscomposer.com/) should be a better fit as it allows
-the user to choose which templating engine, test framework, JS framework and
-other tools to use.
-
-Although this project is opinionated regarding tool choices, community 
-feedback and contributions are always welcome and highly appreciated.
+For it to be truly effective it will need quite a deal of interaction with the app, setting current activity continuously throughout the day. I'm sure this will be challenging, and will while likely require notifications to make sure I keep it up to the moment. I have not experimented with notifications yet so this will provide a good opportunity.
 
 ## Features
-It consists of a Rails 5.1.3 app, including:
+It consists of a Rails 5.1.7 app, including:
 - A selection of useful gems for development and debugging such as
 [rubocop](https://github.com/bbatsov/rubocop),
 [brakeman](https://github.com/presidentbeef/brakeman),
@@ -81,7 +71,7 @@ gem](https://github.com/ryanb/letter_opener)).
 - High test coverage.
 
 ## Development Environment Dependencies
-- Ruby 2.4.2
+- Ruby 2.4.9
 - [Yarn](https://yarnpkg.com/en/docs/install)
 - Required for running JavaScript-enabled feature specs:
     - [Selenium](http://www.seleniumhq.org/projects/webdriver/)
@@ -100,53 +90,18 @@ Setup tasks such as configuring  time zones, default locale and action mailer
 (e.g., SMTP or transactional e-mail service) are not included in the following
 steps as they are not specific to this base app.
 
-1. Fork this repository.
-2. Clone the forked repository to your machine.
-3. Rename the application: 
-    1. *Required*: change the module name in `config/application.rb` 
-from `ZenRailsBaseApp` to your application name, in camel case.
-    2. *Optional*: Use your IDE's "search all files" feature to find and 
-    replace the following strings:
-        - Replace `time_track` by `your_app_name` 
-        - Replace `time_track` by `YOUR_APP_NAME`
-        - Replace `TimeTrack` by the project's name
-        - Replace `bwoodreid@gmail.com`  manually by the different e-mail addresses
-        that should send and receive e-mails in various parts of the 
-        application.
-4. Run `bundle install` to install the gems listed in the `Gemfile` and their 
-dependencies.
-5. Run `yarn install` to install the front end (JavaScript) packages listed 
-in `packages.json` and their dependencies.
-6. Configure the databases:
- 
-    1. If using PostgreSQL, uncomment the `pg` gem from the `Gemfile`. If 
-    using MySQL, uncomment the `mysql2` gem.
-
-    2. Uncomment the section of `config/database.yml` corresponding to your 
-    chosen DBMS.
   
-7. Before attempting to run the application or its test suite, run `rails 
+1. Before attempting to run the application or its test suite, run `rails 
 db:create db:migrate db:seed` within the project's root directory. That will 
 create the following seed users:
     - Ordinary user: email: `user@test.com` / password: `Devpass1`
     - Admin user: email: `admin@test.com` / password: `Devpass1`
-8. Customise the authentication setup. You may want to change one or more of 
-the following items: 
-    - Aside from Devise's default attributes,
-    the `User` model also has `role`, `first_name`, and `last_name` attributes. 
-    - Aside from the Devise's default modules, this app also uses
-    [Confirmable](http://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Confirmable),
-    [Timeoutable](http://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Timeoutable)
-    and
-    [Lockable](http://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Lockable).
-    - Pundit is used for for authorization. The `User` model has an enum
-    attribute called `role`. Its possible values are `:user` and `:admin`. The
-    default value is `:user`.
-9. Customize the application colors by overwriting Bootstrap's variables in 
+
+2. Customize the application colors by overwriting Bootstrap's variables in 
 `app/assets/stylesheets/global.scss`.
-10. Remove unused items from the application, such as gems from the `Gemfile`, 
+3. Remove unused items from the application, such as gems from the `Gemfile`, 
 RSpec helpers, custom matchers and shared examples from `spec/support`. 
-11. Consider going through the [Zen Rails Security
+4. Consider going through the [Zen Rails Security
 Checklist](https://github.com/brunofacca/zen-rails-security-checklist) before
 deploying the application to production.
 
@@ -160,8 +115,12 @@ Select2.
 - Add an asterisk to the labels of required form fields.
 - Internationalize and translate the JS front end, mainly `global.js` and 
 `zen-utils.js`.
-
-##Package Control Messages
+- Build interface to edit Slots.
+- Fix js so current slot is displayed.
+- Set up search to view slots by day.
+- Build a statistics page.
+- Set up notifications.
+- Fix the test suite
 ========================
 
 ##TestRSpec
@@ -210,24 +169,8 @@ Select2.
 
 ## Authors
 
-- **Bruno Facca** - [Twitter](https://twitter.com/bruno_facca) - 
-[LinkedIn](https://www.linkedin.com/in/brunofacca/) - Email: bruno at facca 
-dot info
+- This app was build off the zen-rails-base-app(https://github.com/brunofacca/zen-rails-base-app) by **Bruno Facca** - [Twitter](https://twitter.com/bruno_facca) - 
 
-## Contributing
-
-**Bug reports**
-
-Please use the issue tracker to report any bugs.
-
-**Developing**
-
-1. Create an issue and describe your idea
-2. Fork it
-3. Create your feature branch (git checkout -b my-new-feature)
-4. Commit your changes (git commit -m 'Add some feature')
-5. Publish the branch (git push origin my-new-feature)
-6. Create a Pull Request
 
 ## License
 

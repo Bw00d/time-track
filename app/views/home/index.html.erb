@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-lg-10 col-sm-12 center-block">
     <div class="clock">
-      <div class="face col-sm-12 center-block">
+      <div class=" col-sm-12 center-block">
 
         <%= pie_chart(@data, legend: false) %>
           
@@ -11,7 +11,7 @@
 </div>
 <div class="row">
   <div class="col-lg-10 col-sm-12 center-block">
-  <h2 class="col-lg-10 col-sm-12 center-block center">
+  <h2 id="current-slot" class="col-lg-10 col-sm-12 center-block center">
     <% if @current_slot %>
       <%= @current_slot.description %></h2>
     <% end %>
