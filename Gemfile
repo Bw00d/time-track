@@ -65,7 +65,7 @@ gem 'select2-rails'
 gem 'exception_notification'
 
 # Add chart for clock
-gem 'chartkick', '~> 3.3.0'
+gem 'chartkick', '~> 3.4.0'
 gem 'groupdate'
 
 group :test do
